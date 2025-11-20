@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDAC Style Contact Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image: url('Resource/img/contact.jpg'); /* Default background image */
+        background-size: cover; /* Ensures the image covers the entire page */
+        background-position: center; /* Centers the background image */
+        background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+        height: 100vh; /* Makes sure the body takes up full height */
+    }
+
+    /* Full width header image */
+    header img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Page title styling */
+    .page-title {
+        text-align: center;
+        color: #fff; /* White text color for contrast */
+        font-size: 3rem; /* Larger font size */
+        padding: 40px 0;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
+    }
+
+    /* Main grid container */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Boxes styling */
+    .content-box, .contact-info, .branch-info, .map-location {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    /* Branches list styling */
+    .branch-info ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .branch-info li {
+        margin-bottom: 10px;
+    }
+
+    /* Map styling */
+    .map-location iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 8px;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+        body {
+            background-image: url('Resource/img/contact-mobile.jpg'); /* Mobile background image */
+            background-size: cover; /* Ensures the image covers the mobile screen */
+            background-position: center; /* Keeps the image centered */
+        }
+
+        .grid-container {
+            grid-template-columns: 1fr; /* Stack the grid items in one column */
+        }
+
+        /* Title for mobile devices */
+        .page-title {
+            font-size: 2.5rem; /* Adjust the title size for smaller screens */
+            padding: 30px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Page Title -->
+<div class="page-title">
+     <br>
+     <br>
+    <h1>Contact Us</h1>
+    <p>Get in touch with our team or visit our branches for more information.</p>
+</div>
+
+<!-- Main content grid -->
+<section class="grid-container">
+    <!-- About/Content Box -->
+    <div class="content-box">
+        <h2>About Our Branches</h2>
+        <p>We have multiple branches across the country. Visit the closest one for more information.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> contact@company.com</p>
+        <p><strong>Address:</strong> 123 Business St, City, Country</p>
+    </div>
+
+    <!-- Branch Info -->
+    <div class="branch-info">
+        <h3>Our Branches</h3>
+        <ul>
+            <li>Branch 1: 456 Main St, City</li>
+            <li>Branch 2: 789 Side St, City</li>
+            <li>Branch 3: 1010 North Ave, City</li>
+        </ul>
+    </div>
+
+    <!-- Map -->
+    <div class="map-location">
+        <h3>Our Location on the Map</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28960.570451687446!2d-73.935242!3d40.730610!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDAwJzU4LjAiTiA3M8KwNTknNTguNSJ1z!5e0!3m2!1sen!2sus!4v1603673821652!5m2!1sen!2sus" 
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+</body>
+</html>

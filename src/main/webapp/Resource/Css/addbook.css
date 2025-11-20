@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+/* Background & Page Centering */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Form Box (Glass Effect) */
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00f0ff;
+    width: 350px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+    text-shadow: 0 0 4px #00f0ff;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 0 6px #00f0ff;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+input[type="text"]::placeholder {
+    color: #555;
+    font-style: italic;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f0ff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+    box-shadow: 0 0 15px #00f0ff;
+}
+
+/* Form Heading */
+h2 {
+    text-align: center;
+    text-shadow: 0 0 5px #00f0ff;
+}
